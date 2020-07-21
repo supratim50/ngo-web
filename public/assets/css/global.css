@@ -31,6 +31,13 @@
   line-height: 155% !important;
   letter-spacing: 0.04em !important;
 }
+
+.small-paragraph {
+  max-width: 218px;
+  font-size: 12px !important;
+  line-height: 155% !important;
+  letter-spacing: 0.04em !important;
+}
 /* ///////////////////////////////////////////////////////////////////// */
 /* ============================== color ================================ */
 

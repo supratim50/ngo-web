@@ -2,11 +2,15 @@ import React from "react";
 import App from "next/app";
 import Head from "next/head";
 import DefaultLayout from "../components/layouts/default-layout";
+// import { useLax } from "./use-lax";
 // import "bootstrap/dist/css/bootstrap.css";
 class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
     const Layout = Component.Layout || DefaultLayout;
+
+    // uselax
+    // useLax();
 
     return (
       <>

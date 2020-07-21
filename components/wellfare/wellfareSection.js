@@ -5,9 +5,15 @@ import WellfareCircle from "../wellfare/wellfareCircle";
 const WellfareSection = () => {
   return (
     <section
-      className="section-pt section-pb"
+      className="section-pt section-pb position-relative overflow-hidden"
       style={{ backgroundColor: "#F7F8FC" }}
     >
+      {/* background  */}
+      <img
+        src="/assets/images/bubbles.png"
+        className="about-background d-none d-md-block"
+      />
+
       <div className="container">
         <PrimaryHeading
           text="Over 1200+ wellfare work completed & still counting"
@@ -48,6 +54,16 @@ const WellfareSection = () => {
           </div>
         </div>
       </div>
+      <style jsx>{`
+        .about-background {
+          position: absolute;
+          max-width: 96%;
+          max-height: 96%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      `}</style>
     </section>
   );
 };

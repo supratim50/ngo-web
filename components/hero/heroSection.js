@@ -1,7 +1,6 @@
 const HeroSection = () => {
   return (
     <section style={{ width: "100%" }}>
-      <div className="container">Hello</div>
       <style jsx>{`
         section {
           width: 100vw;

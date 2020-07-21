@@ -176,6 +176,7 @@ const GallerySection = () => {
           height: 100vh;
           background-color: rgba(0, 0, 0, 0.8);
           transition: 0.4s;
+          z-index: 1999;
 
           opacity: 0;
           visibility: hidden;
@@ -186,6 +187,7 @@ const GallerySection = () => {
           max-width: 660px;
           border-radius: 8px;
           transition: 0.6s;
+          z-index: 2000;
 
           top: 50%;
           left: 50%;

@@ -1,14 +1,33 @@
+// import { useLaxElement } from "../../pages/use-lax";
+
 // components
 import PrimaryHeading from "../heading/primaryHeading";
 
 const AboutSection = () => {
+  // const ref = useLaxElement();
+
   return (
     <section
-      className="section-pt section-pb"
+      className="section-pt section-pb position-relative overflow-hidden"
       style={{
         backgroundColor: "#F7F8FC",
       }}
     >
+      {/* background svg */}
+
+      {/* <img
+        ref={ref}
+        data-lax-preset="leftToRight fadeInOut"
+        src="/assets/images/bubbles.png"
+        className="about-background"
+      /> */}
+
+      <img
+        src="/assets/images/bubbles.png"
+        className="about-background d-none d-md-block"
+      />
+
+      {/* background svg end */}
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-7 d-flex align-items-center">
@@ -39,6 +58,14 @@ const AboutSection = () => {
         </div>
       </div>
       <style jsx>{`
+        .about-background {
+          position: absolute;
+          max-width: 96%;
+          max-height: 96%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
         .about-box {
           max-width: 508px;
         }

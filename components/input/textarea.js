@@ -1,4 +1,4 @@
-const Textarea = ({ placeholder, value, classList }) => {
+const Textarea = ({ placeholder, classList }) => {
   return (
     <>
       <textarea
@@ -6,9 +6,7 @@ const Textarea = ({ placeholder, value, classList }) => {
         className={`textarea w-100 py-3 border-0 px-4 ${
           classList ? classList : ""
         }`}
-      >
-        {value}
-      </textarea>
+      ></textarea>
       <style jsx>{`
         .textarea {
           background: #ffffff;
